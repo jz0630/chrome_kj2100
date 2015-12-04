@@ -1,0 +1,24 @@
+{
+  "name": "kj2100会计继续教育刷课",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "为帮女友刷课写了一个小插件.",
+  "permissions": [
+  "http://*.kj2100.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://bj.kj2100.com/", "http://bj.kj2100.com/index.asp*", "http://bj.kj2100.com/Index.asp*"],
+      "run_at": "document_end",
+      "js": ["zepto.min.js", "login.js"]
+    },{
+      "matches": ["http://bj.kj2100.com/2015_CourseList.asp", "http://bj.kj2100.com/2015_LessonList.asp*"],
+      "run_at": "document_end",
+      "js": ["zepto.min.js", "change_class.js", "login.js"]
+    },{
+      "matches": ["http://bj.kj2100.com/aaa", "http://kejian.kj2100.com/*"],
+      "run_at": "document_end",
+      "js": ["zepto.min.js", "set_time.js", "login.js"]
+    }
+  ]
+}
