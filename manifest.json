@@ -12,7 +12,7 @@
       "run_at": "document_end",
       "js": ["zepto.min.js", "login.js"]
     },{
-      "matches": ["http://bj.kj2100.com/2015_CourseList.asp", "http://bj.kj2100.com/2015_LessonList.asp*"],
+      "matches": ["http://bj.kj2100.com/2016_CourseList.asp", "http://bj.kj2100.com/2016_LessonList.asp*"],
       "run_at": "document_end",
       "js": ["zepto.min.js", "change_class.js", "login.js"]
     },{
